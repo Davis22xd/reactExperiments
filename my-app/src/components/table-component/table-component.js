@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './table.css'
+import DataRow from './../data-row/DataRow';
 
 class TableComponent extends Component {
 
@@ -15,30 +16,30 @@ class TableComponent extends Component {
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Pool 1</td>
-                <td>45</td>
-                <td>7</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Pool 2</td>
-                <td>50</td>
-                <td>8</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>Pool 3</td>
-                <td>60</td>
-                <td>9</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Pool 4</td>
-                <td>45</td>
-                <td>10</td>
-                <td>10</td>
-            </tr>
+            <DataRow
+            poolName='Pool 1'
+            oxygen='45'
+            ph='7.8'
+            temperature='12'
+            />
+            <DataRow
+            poolName='Pool 2'
+            oxygen='40'
+            ph='8'
+            temperature='12'
+            />
+            <DataRow
+            poolName='Pool 3'
+            oxygen='39'
+            ph='10'
+            temperature='12'
+            />
+            <DataRow
+            poolName='Pool 4'
+            oxygen='50'
+            ph='7.8'
+            temperature='9'
+            />
             </tbody>
         </table>
       );
