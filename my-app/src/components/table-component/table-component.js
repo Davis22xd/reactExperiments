@@ -7,35 +7,39 @@ class TableComponent extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            rows: data.map(poolInfo => {
-                return (
-                    <DataRow
-                        key={poolInfo.id}
-                        poolName={poolInfo.poolName}
-                        oxygen={poolInfo.oxygen}
-                        ph={poolInfo.ph}
-                        temperature={poolInfo.temperature}
-                    />
-                )
-            }),
-        };
+        this.state = {rows:  data.map(poolInfo => {
+            return (
+                <DataRow
+                    key={poolInfo.id}
+                    poolName={poolInfo.poolName}
+                    oxygen={poolInfo.oxygen}
+                    ph={poolInfo.ph}
+                    temperature={poolInfo.temperature}
+                />
+            )
+        })};
+
+        setInterval(() => {
+            this.addRow(Math.random());
+          }, 1000);
     }
 
     addRow(index) {
-        this.state.rows.push(
-            <DataRow
-                        key={index}
-                        poolName={'Pool ' + index}
-                        oxygen='45'
-                        ph='8.7'
-                        temperature='10'
-                    />
-        )
+
+        this.setState((state) => {
+            return (state.rows.push(
+                <DataRow
+                            key={index}
+                            poolName={'Pool X'}
+                            oxygen='45'
+                            ph='8.7'
+                            temperature='10'
+                        />
+            ))
+          });
+    
     }
     render() {
-        setInterval(this.addRow(10), 3000)
-
         return (
             <table>
                 <thead>
