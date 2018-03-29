@@ -1,5 +1,28 @@
-table {
+
+.main{
     margin: 24px;
-    border: 1px solid black;
-    width: 78%;
 }
+
+.main h3 {
+    padding: 24px;
+    border-bottom: 2px solid red;
+    text-align: left;
+}
+
+.main table {
+    padding: 12px;
+    width: 100%;
+}
+
+.main table, th, td{
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+  }
+
+  .main table td {
+    padding: 4px;
+    color: gray;
+    font-size: 12px;
+    border-bottom: 1px solid grey;
+  }

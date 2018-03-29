@@ -41,19 +41,22 @@ class TableComponent extends Component {
     }
     render() {
         return (
+            <div className="main">
+                <h3>Panel de Control</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Pool</th>
-                        <th>Ox</th>
-                        <th>Ph</th>
-                        <th>Temp</th>
+                        <th className="cell">Pool</th>
+                        <th className="cell">Ox</th>
+                        <th className="cell">Ph</th>
+                        <th className="cell">Temp</th>
                     </tr>
                 </thead>
                 <tbody>
                     {this.state.rows}
                 </tbody>
             </table>
+            </div>
         );
     }
 }
