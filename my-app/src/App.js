@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import TableComponent from './components/table-component/TableComponent'
+import DataForTable from './components/data-for-table/DataForTable'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Skretting</h1>
         </header>
-        <TableComponent/>    
+        <DataForTable />    
       </div>
     );
   }
