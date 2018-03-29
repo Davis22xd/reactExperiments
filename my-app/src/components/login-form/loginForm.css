@@ -9,6 +9,7 @@ form h2#loginHeader{
     margin: 4px auto;
     width: 100px;
     text-align: center;
+    color: #0099CC;
 }
 
 form .buttonHolder{
