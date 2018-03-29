@@ -1,0 +1,24 @@
+form#loginForm{
+    margin: 36px;
+    background-color: white;
+    padding: 24px;
+    width: 600px;
+}
+
+form h2#loginHeader{
+    margin: 4px auto;
+    width: 100px;
+    text-align: center;
+}
+
+form .buttonHolder{
+    text-align: center;
+}
+
+form .buttonHolder #logInSubmit{
+    width: 100px;
+    background: #0099CC;
+    color: white;
+    border: none;
+    padding: 4px;
+}

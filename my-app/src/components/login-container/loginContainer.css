@@ -1,4 +1,8 @@
 
+div#loginContainer {
+    background-color: #fff;
+}
+
 div#loginContainer header {
     display: inline-flex;
     background-color: white;
@@ -12,15 +16,22 @@ div#loginContainer header #upperLogo {
 }
 
 div#loginContainer div#mainArea {
-    padding: 36px;
-    height: 600px;
+    padding: 56px;
+    height: 500px;
     background-image: url("../../images/BKG.png");
     background-repeat: no-repeat;
 }
 
-div#loginContainer footer {
-    height: 90px;
+div#loginContainer #footer {
+    height: 100px;
     width: 100%;
-    background-color: white;
+    background-image: url("../../images/FooterBG.png");
+    background-repeat: no-repeat;
+}
+
+div#loginContainer #footer #footerLogo{
+    height: 70px;
+    margin: 10px;
+    float: right;
 }
 

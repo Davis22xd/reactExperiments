@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import LoginForm from './../login-form/LoginForm';
 import './loginContainer.css'
 
@@ -13,21 +12,14 @@ class LoginContainer extends Component {
                     <h1>PSF Monitor Station</h1>
                 </header>
                 <div id="mainArea">
-                    <this.props.rendererComponent />
+                    <LoginForm/>
                 </div>
-                <footer>
-                    <img src="./../images/FooterBackground.png" alt="Footer Background" />
-                    <img src="./../images/logo.png" alt="Logo" />
-                </footer>
+                <div id="footer">
+                    <img id="footerLogo" src={require('./../../images/logo.png')} alt="Logo" />
+                </div>
             </div>
         )
     }
-}
-LoginContainer.propTypes = {
-    rendererComponent: PropTypes.element
-}
-LoginContainer.defaultProps = {
-    rendererComponent: LoginForm
 }
 
 export default LoginContainer;
