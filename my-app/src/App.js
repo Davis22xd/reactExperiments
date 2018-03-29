@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import DataForTable from './components/data-for-table/DataForTable'
+import LoginContainer from './components/login-container/LoginContainer'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Skretting</h1>
-        </header>
-        <DataForTable />    
-      </div>
+        <LoginContainer />    
     );
   }
 }

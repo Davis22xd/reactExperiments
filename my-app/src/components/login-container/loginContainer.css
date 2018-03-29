@@ -1,0 +1,26 @@
+
+div#loginContainer header {
+    display: inline-flex;
+    background-color: white;
+    height: 90px;
+    width: 100%;
+}
+
+div#loginContainer header #upperLogo {
+    height: 70px;
+    margin: 10px;
+}
+
+div#loginContainer div#mainArea {
+    padding: 36px;
+    height: 600px;
+    background-image: url("../../images/BKG.png");
+    background-repeat: no-repeat;
+}
+
+div#loginContainer footer {
+    height: 90px;
+    width: 100%;
+    background-color: white;
+}
+
