@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import TableComponent from './../table-component/TableComponent';
 import data from './../../data/data';
@@ -37,11 +38,17 @@ class DataForTable extends Component {
 
     render() {
         return (
-            <TableComponent
+            <this.props.rendererComponent
                 data={this.state.rows}
                 />
         )
     }
+}
+DataForTable.propTypes = {
+    rendererComponent: PropTypes.element
+}
+DataForTable.defaultProps = {
+    rendererComponent: TableComponent
 }
 
 export default DataForTable;

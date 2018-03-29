@@ -13,9 +13,9 @@ class TableComponent extends Component {
                 <thead>
                     <tr>
                         <th className="cell">Pool</th>
-                        <th className="cell">Ox</th>
-                        <th className="cell">Ph</th>
-                        <th className="cell">Temp</th>
+                        <th className="cell">OX</th>
+                        <th className="cell">PH</th>
+                        <th className="cell">Temperature</th>
                     </tr>
                 </thead>
                 <tbody>
