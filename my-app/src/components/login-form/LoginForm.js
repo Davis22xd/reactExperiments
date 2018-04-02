@@ -1,7 +1,7 @@
 
 import React from 'react';
-import LabeledInput from './../labeled-input/LabeledInput';
 import './loginForm.css';
+import InputLabeler from './../input-labeler/InputLabeler';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -34,8 +34,12 @@ class LoginForm extends React.Component {
         return (
             <form id="loginForm" onSubmit={this.handleSubmit}>
                 <h2 id="loginHeader">Login</h2>
-                <LabeledInput title={'Nombre'} inputType={'text'} value={this.state.name}  controlFunc={this.handleNameChange} required></LabeledInput>
-                <LabeledInput title={'Contraseña'} inputType={'password'} value={this.state.password} controlFunc={this.handlePasswordChange} required></LabeledInput>
+                <InputLabeler title={'Nombre'}>
+                <input type="text" value={this.state.name}  onChange={this.handleNameChange} required/>
+                </InputLabeler>    
+                <InputLabeler title={'Contraseña'}>
+                <input type="password" value={this.state.password}  onChange={this.handlePasswordChange} required/>
+                </InputLabeler>  
                 <div className="buttonHolder">
                     <input id="logInSubmit" type="submit" value="Log In" />
                 </div>

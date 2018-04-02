@@ -1,18 +1,14 @@
 
-div.inputContainer{
-display: flex;
-margin: 4px;
-}
 
-div.inputContainer label.inputLabel {
-width: 100px;
+label.inputLabel {
+width: 90px;
 overflow: hidden;
 display: inline-block;
 text-overflow: ellipsis;
 white-space: nowrap;
 }
 
-div.inputContainer input {
+input.inputElement {
     width: 200px;
     margin: 12px;
 }
