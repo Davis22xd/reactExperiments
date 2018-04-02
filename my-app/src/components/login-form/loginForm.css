@@ -6,9 +6,7 @@ form#loginForm{
 }
 
 form h2#loginHeader{
-    margin: 4px auto;
-    width: 100px;
-    text-align: center;
+    margin: 12px 0px;
     color: #0099CC;
 }
 

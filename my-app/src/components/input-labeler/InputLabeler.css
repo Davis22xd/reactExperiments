@@ -1,14 +1,12 @@
-
-
-label.inputLabel {
-width: 90px;
-overflow: hidden;
-display: inline-block;
-text-overflow: ellipsis;
-white-space: nowrap;
+div.inputContainer label.inputLabel {
+    width: 100px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-input.inputElement {
+div.inputContainer input {
     width: 200px;
     margin: 12px;
 }

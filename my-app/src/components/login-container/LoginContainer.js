@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LoginForm from './../login-form/LoginForm';
-import './loginContainer.css'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faLaptop from '@fortawesome/fontawesome-free-solid/faLaptop'
+import './loginContainer.css';
 
 class LoginContainer extends Component {
 
@@ -8,7 +10,7 @@ class LoginContainer extends Component {
         return (
             <div id="loginContainer">
                 <header>
-                    <img id="upperLogo" src={require('./../../images/logo.png')} alt="Logo" />
+                    <FontAwesomeIcon id="upperLogo" icon={faLaptop} size='3x'/>
                     <h1>PSF Monitor Station</h1>
                 </header>
                 <div id="mainArea">

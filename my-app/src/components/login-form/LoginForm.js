@@ -34,10 +34,10 @@ class LoginForm extends React.Component {
         return (
             <form id="loginForm" onSubmit={this.handleSubmit}>
                 <h2 id="loginHeader">Login</h2>
-                <InputLabeler title={'Nombre'}>
+                <InputLabeler title={'Username'}>
                 <input type="text" value={this.state.name}  onChange={this.handleNameChange} required/>
                 </InputLabeler>    
-                <InputLabeler title={'Contraseña'}>
+                <InputLabeler title={'Password'}>
                 <input type="password" value={this.state.password}  onChange={this.handlePasswordChange} required/>
                 </InputLabeler>  
                 <div className="buttonHolder">

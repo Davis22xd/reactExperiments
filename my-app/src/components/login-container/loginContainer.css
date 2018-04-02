@@ -7,12 +7,10 @@ div#loginContainer {
 div#loginContainer header {
     display: inline-flex;
     background-color: white;
-    height: 90px;
-    width: 100%;
+    padding: 10px;
 }
 
-div#loginContainer header #upperLogo {
-    height: 70px;
+div#loginContainer header h1{
     margin: 10px;
 }
 
@@ -25,7 +23,6 @@ div#loginContainer div#mainArea {
 
 div#loginContainer #footer {
     height: 100px;
-    width: 100%;
     background-image: url("../../images/FooterBG.png");
     background-repeat: no-repeat;
 }
